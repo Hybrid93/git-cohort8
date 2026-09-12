@@ -38,4 +38,24 @@ let employee = {
     city: "Lagos",
     salary: 50000
 }
-const { name, position, department, city, salary } = employee;
+let hisName = employee.name;
+let hisRole = employee.position;
+let hisSalary = employee.salary;
+let hisCity = employee.city;
+
+const { name:userName, position:job, salary, city } = employee;
+let DNA = {
+    gender : "Male",
+    complexion : "Dark"
+}
+
+let offSpring = {
+    ...DNA,
+    name : "SHUAIB LUKMAN MUHAMMED",
+    age : 30
+}
+console.log(offSpring);
+
+console.log(Object.keys(offSpring));
+console.log(Object.values(offSpring));
+console.log(Object.entries(offSpring));
